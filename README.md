@@ -6,4 +6,4 @@ npm install
 
 npm run serve-json
 
-npm run dev
+npm start
