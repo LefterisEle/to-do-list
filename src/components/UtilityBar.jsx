@@ -23,11 +23,6 @@ const UtilityBar = ({
         handleFilterChange(name, value);
     };
 
-    const handleFilterCompletion = (selectedOption, name) => {
-        setFilterParams({ ...filterParams, [name]: selectedOption.value });
-        handleFilterChange(name, selectedOption.value);
-    };
-
     return (
         <div className='utility-bar'>
             <div className='utility-bar__search-bar'>

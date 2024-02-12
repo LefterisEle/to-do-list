@@ -1,16 +1,16 @@
 import Select from 'react-select';
 
+const options = [
+    { label: 'All', value: '' },
+    { label: 'Completed', value: 'completed' },
+    { label: 'Incompleted', value: 'incompleted' },
+];
+
 const SelectGroup = ({ setFilterParams, value, handleFilterChange }) => {
     const handleChange = (select) => {
         setFilterParams({ ...value, ['groupTodos']: select.value });
         handleFilterChange('groupTodos', select.value);
     };
-
-    const options = [
-        { label: 'All', value: '' },
-        { label: 'Completed', value: 'completed' },
-        { label: 'Incompleted', value: 'incompleted' },
-    ];
 
     return (
         <Select
@@ -31,9 +31,24 @@ const SelectGroup = ({ setFilterParams, value, handleFilterChange }) => {
                     backgroundColor: state.isFocused ? '#a29dff' : '#fff',
                     fontSize: '14px',
                 }),
+                indicatorSeparator: () => ({
+                    display: 'none',
+                }),
+                dropdownIndicator: (baseStyles, state) => ({
+                    ...baseStyles,
+                    color: state.isFocused ? '#fff' : '#fff',
+                }),
+                singleValue: (provided) => ({
+                    ...provided,
+                    color: '#fff',
+                    fontSize: '12px',
+                }),
             }}
             className='react-select-container'
-            placeholder={'All'}
+            value={options.filter(
+                (option) => option.value === value.groupTodos
+            )}
+            placeholder=''
             defaultValue={value.groupTodos}
             onChange={handleChange}
             options={options}
