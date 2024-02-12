@@ -4,6 +4,7 @@
 :root {
     --primary: #6c63ff;
     --primary-dark: #5850dd;
+    --primary-theme: #6c63ff;
     --background: #f7f7f7;
     --background-dark: #e6e5e5;
     --text: #252525;
@@ -25,6 +26,7 @@ html {
 [data-theme='dark'] {
     --text: #f7f7f7;
     --background: #252525;
+    --primary-theme: #f7f7f7;
 }
 
 // ::-webkit-scrollbar {

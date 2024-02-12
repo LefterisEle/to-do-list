@@ -45,3 +45,9 @@
         stroke: inherit;
     }
 }
+
+.dark-icon {
+    &__path {
+        fill: var(--primary-theme);
+    }
+}

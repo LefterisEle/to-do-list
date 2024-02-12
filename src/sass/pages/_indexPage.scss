@@ -10,6 +10,7 @@
     position: relative;
 
     &__title {
+        color: var(--text);
         margin-top: 2rem;
         font-size: 20px;
     }
@@ -26,6 +27,11 @@
         justify-content: center;
         align-items: center;
         cursor: pointer;
+
+        &:focus,
+        &:hover {
+            background-color: var(--primary-dark);
+        }
 
         &--hidden {
             display: none;
