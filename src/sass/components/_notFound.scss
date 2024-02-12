@@ -1,0 +1,23 @@
+.notfound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+
+    &__title {
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    &__anchor {
+        color: var(--primary);
+        text-decoration: underline;
+
+        &:hover {
+            transition: none;
+            color: var(--primary-dark);
+        }
+    }
+}

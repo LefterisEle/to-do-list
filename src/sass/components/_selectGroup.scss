@@ -1,0 +1,22 @@
+.react-select-container {
+    width: 75px;
+    color: #fff;
+}
+
+@include media-md {
+    .react-select-container {
+        width: 75px;
+    }
+}
+
+@include media-lg {
+    .react-select-container {
+        width: 100px;
+    }
+}
+
+@include media-xl {
+    .react-select-container {
+        width: 125px;
+    }
+}

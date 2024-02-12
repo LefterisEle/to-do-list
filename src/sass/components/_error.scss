@@ -1,0 +1,25 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem;
+    height: 100vh;
+
+    &__title {
+        font-size: 1.875rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #dc2626;
+    }
+
+    &__status {
+        font-size: 1.125rem;
+        color: #4b5563;
+    }
+
+    &__response {
+        font-size: 0.875rem;
+        color: #718096;
+    }
+}

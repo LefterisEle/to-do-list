@@ -1,0 +1,47 @@
+.dark-icon,
+.sun-icon {
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+
+    &__rect {
+        width: inherit;
+        height: inherit;
+        fill: var(--primary);
+
+        &:hover,
+        &:focus {
+            fill: var(--primary-dark);
+        }
+    }
+}
+
+.delete-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    stroke: #cdcdcd;
+    &:hover,
+    &:focus {
+        stroke: #e50000;
+    }
+
+    &__path {
+        stroke: inherit;
+    }
+}
+
+.edit-icon {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    stroke: #cdcdcd;
+    &:hover,
+    &:focus {
+        stroke: var(--primary);
+    }
+
+    &__path {
+        stroke: inherit;
+    }
+}
